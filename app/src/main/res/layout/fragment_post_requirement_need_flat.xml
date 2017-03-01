@@ -1,0 +1,370 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbars="none"
+    tools:context=".ui.fragments.PostRequirementNeedFlatFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <!--your location-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_margin_top">
+
+            <AutoCompleteTextView
+                android:id="@+id/need_flat_your_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectanglebox"
+                android:ems="10"
+                android:hint="@string/need_flat_your_location"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColorHint="@color/hintColor">
+
+            </AutoCompleteTextView>
+
+            <ImageButton
+                android:id="@+id/need_flat_your_location_clearTextBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:src="@drawable/icon_clear" />
+        </RelativeLayout>
+
+        <!--another location-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_margin_top">
+
+            <AutoCompleteTextView
+                android:id="@+id/need_flat_another_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectanglebox"
+                android:ems="10"
+                android:hint="@string/need_flat_search_location"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColorHint="@color/hintColor">
+
+            </AutoCompleteTextView>
+
+            <ImageButton
+                android:id="@+id/need_flat_another_location_clearTextBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:src="@drawable/icon_clear" />
+        </RelativeLayout>
+
+        <!--rent-->
+        <EditText
+            android:id="@+id/need_flat_rent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_margin_top"
+            android:background="@drawable/rectanglebox"
+            android:ems="10"
+            android:hint="@string/need_flat_rent"
+            android:inputType="number"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColorHint="@color/hintColor" />
+
+        <!--LookingFor-->
+        <LinearLayout
+            android:id="@+id/view_looking_for"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_margin_top"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/looking_for_title"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/title_txt_size" />
+
+            <RadioGroup
+                android:id="@+id/radioGrp_looking_for"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_male"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/male" />
+
+                <RadioButton
+                    android:id="@+id/radio_female"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/female" />
+
+                <RadioButton
+                    android:id="@+id/radio_looking_for_any"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/any" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--Occupancy-->
+        <LinearLayout
+            android:id="@+id/view_occupancy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_margin_top"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/occupancy_title"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/title_txt_size" />
+
+            <RadioGroup
+                android:id="@+id/radioGrp_occupancy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_occupancy_single"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/occupancy_single" />
+
+                <RadioButton
+                    android:id="@+id/radio_occupancy_shared"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/occupancy_shared" />
+
+                <RadioButton
+                    android:id="@+id/radio_occupancy_any"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/any" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--Need To shift From-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_margin_top"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/have_flat_available_date"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/title_txt_size" />
+
+            <EditText
+                android:id="@+id/need_flat_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:background="@drawable/rectanglebox"
+                android:padding="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColorHint="@color/hintColor" />
+        </LinearLayout>
+
+        <!--Contact number-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_margin_top"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/contact_number"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/title_txt_size" />
+
+            <EditText
+                android:id="@+id/need_flat_contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:background="@drawable/rectanglebox"
+                android:hint="@string/contact_hint"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColorHint="@color/hintColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:fontFamily="sans-serif"
+                android:text="@string/contact_show_hint"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/contact_hint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/contact_hide_hint"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/contact_hint" />
+
+            <RadioGroup
+                android:id="@+id/radioGrp_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_contact_show"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/contact_show" />
+
+                <RadioButton
+                    android:id="@+id/radio_contact_hide"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/contact_hide" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--description-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_margin_top"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/have_flat_description"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/title_txt_size" />
+
+            <EditText
+                android:id="@+id/need_flat_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:background="@drawable/rectanglebox"
+                android:ems="10"
+                android:hint="@string/have_flat_description_hint"
+                android:padding="10dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColorHint="@color/hintColor" />
+        </LinearLayout>
+
+        <!--submit btn-->
+        <Button
+            android:id="@+id/btn_need_flat_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/roundbtn"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/submit"
+            android:textColor="#ffff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>

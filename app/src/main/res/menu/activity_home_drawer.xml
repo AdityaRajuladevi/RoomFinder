@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group_search"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="Search" />
+    </group>
+
+    <group
+        android:id="@+id/group_edit_requirement"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_post_requirement"
+            android:icon="@drawable/ic_menu_add_requirement"
+            android:title="Post Requirement" />
+    </group>
+    <group
+        android:id="@+id/group_preferences"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_edit_preferences"
+            android:icon="@drawable/edit_req"
+            android:title="Edit Preferences" />
+    </group>
+    <group
+        android:id="@+id/group_feedback"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_menu_feedback"
+            android:title="Feedback" />
+    </group>
+
+    <group
+        android:id="@+id/group_logout"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+    <!--<group android:checkableBehavior="single">-->
+    <!--<item android:title="Communicate">-->
+    <!--<menu>-->
+    <!--<item android:id="@+id/nav_share" android:icon="@android:drawable/ic_menu_share"-->
+    <!--android:title="Share" />-->
+    <!--<item android:id="@+id/nav_send" android:icon="@android:drawable/ic_menu_send"-->
+    <!--android:title="Send" />-->
+    <!--</menu>-->
+    <!--</item>-->
+
+</menu>

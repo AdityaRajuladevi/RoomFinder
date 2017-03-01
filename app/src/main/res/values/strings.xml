@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">RoomFinder</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password </string>
+    <string name="prompt_phoneno">Phone Number </string>
+    <string name="prompt_name">Name </string>
+    <string name="remember_login_text">Remember me </string>
+    <string name="action_login"> Login </string>
+    <string name="action_register"> Register </string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_invalid_phoneno">This number is not valid</string>
+    <string name="error_invalid_name">Name Cannot be Empty</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!--Login Fault Messages-->
+    <string name="MSG_LOGIN_DISABLED">Login has been disabled for the user account.</string>
+    <string name="MSG_LOGIN_DISABLED_MULTIPLE">User cannot login because Multiple Logins disabled and there is a logged in user for the account.</string>
+    <string name="MSG_LOGIN_INVALID_CREDENTIALS">Invalid login or password.</string>
+    <string name="MSG_LOGIN_ACCOUNT_LOCKED">Account locked out due to too many failed logins.</string>
+    <string name="MSG_LOGIN_ACCOUNT_MULTIPLE_LOGIN_LIMIT_REACHED">Multiple login limit for the same user account has been reached.</string>
+
+    <string name="MSG_REGISTER_FAILED">External registration failed with an error.</string>
+    <string name="MSG_REGISTER_USER_ALREADY_EXISTS">User with the same identity already exists, Please Try Again with different details.</string>
+    <string name="MSG_REGISTER_EMAIL_WRONG">Email address is in the wrong format</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_register">Register</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+    <string name="register_text">Register</string>
+    <string name="register_title">Registration</string>
+    <string name="uploadPhoto">Upload Picture</string>
+
+    <!--Preference Activity Strings-->
+    <string name="title_activity_preferences">My Preferences</string>
+    <string name="preference_food">FOOD</string>
+    <string name="preference_food_title">Food</string>
+    <string name="preference_food_veg">Veg</string>
+    <string name="preference_food_non">NonVeg</string>
+
+    <string name="preference_life_style">LIFE STYLE</string>
+    <string name="preference_life_style_title">LifeStyle</string>
+    <string name="preference_life_style_night_owl">NightOwl</string>
+    <string name="preference_life_style_night_early_bird">EarlyBird</string>
+
+    <string name="preference_smoking">SMOKING</string>
+    <string name="preference_drinking">DRINKING</string>
+    <string name="preference_smoking_title">Smoking</string>
+    <string name="preference_drinking_title">Drinking</string>
+
+    <string name="preference_dont_care">Don\'t Care</string>
+    <string name="preference_yes">Yes</string>
+    <string name="preference_no">No</string>
+
+    <string name="update">Update</string>
+    <string name="save">Save</string>
+
+    <string name="network_dialog_title">Internet Connectivity Issue</string>
+    <string name="network_error">A network error occurred. Please Check your connection and try again. </string>
+
+    <string name="have_flat">Have Flat</string>
+    <string name="need_flat">Need Flat</string>
+
+    <string name="flat_mates">FlateMates</string>
+    <string name="area_title">Area</string>
+    <string name="search_hint">Search by region or landmark</string>
+    <string name="looking_for_title">Looking For</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="any">Any</string>
+
+    <string name="occupancy_title">Occupancy</string>
+    <string name="occupancy_single">Single</string>
+    <string name="occupancy_shared">Shared</string>
+
+    <string name="rent_range">Rent Range</string>
+    <string name="approx_rent">Approx Rent</string>
+    <string name="last_updated">Last Updated</string>
+    <string name="default_price">350+</string>
+    <string name="submit">Submit</string>
+
+    <!--Post Requirement-->
+    <!--have flat-->
+    <string name="have_flat_area">Area/Sector</string>
+    <string name="have_flat_rent">Rent Per Head</string>
+    <string name="have_flat_select_images">Add Photo</string>
+    <string name="have_flat_available_date">Available From</string>
+    <string name="have_flat_description">Description</string>
+    <string name="have_flat_description_hint">More Info Here...</string>
+
+    <string name="contact_number">Contact Number</string>
+    <string name="contact_hint">Enter your contact number</string>
+    <string name="contact_show_hint">Show - User can call and/or chat with you..</string>
+    <string name="contact_show">Show</string>
+    <string name="contact_hide_hint">Hide - User can only chat with you..</string>
+    <string name="contact_hide">Hide</string>
+
+    <!--need flat-->
+    <string name="need_flat_your_location">Enter Your Location</string>
+    <string name="need_flat_search_location">Enter Another Location</string>
+    <string name="need_flat_rent">Approx Rent</string>
+
+    <string name="txt_search_flats_not_available">No Places are available with your preferences</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="select_image">Select Images</string>
+    <string name="title_postRequirement">Post Requirement</string>
+    <string name="title_activity_search">Search Results</string>
+    <string name="title_activity_chat">Room Finder Chat </string>
+    <string name="title_activity_selected_profile">" "</string>
+
+    <string name="profile_location">Location</string>
+    <string name="have_flat_selected_photos">Pictures</string>
+    <string name="have_flat_selected_amenities">Amenities</string>
+    <string name="selected_call">Call</string>
+    <string name="selected_chat">Chat</string>
+
+
+    <string name="amenities_tv">Tv</string>
+    <string name="amenities_fridge">Fridge</string>
+    <string name="amenities_kitchen">Kitchen</string>
+    <string name="amenities_wifi">Wi Fi</string>
+    <string name="amenities_ac">AC</string>
+    <string name="amenities_backup">Backup</string>
+    <string name="amenities_machine">Machine</string>
+    <string name="amenities_cook">Cook</string>
+    <string name="amenities_parking">Parking</string>
+
+    <string name="btn_send">Send</string>
+    <string name="menu_deleteChat">Clear Chat</string>
+    <string name="title_activity_photos_full_screen_view">PhotosFullScreenViewActivity</string>
+
+    Fridge
+</resources>
